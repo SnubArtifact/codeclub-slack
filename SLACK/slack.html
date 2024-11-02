@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI work management and productivity tools / Slack</title>
+        <style>
+            .thumbnail {
+                margin-left: 137px;
+                margin-top: 18px;
+                background: none;
+            }
+            .features {
+                box-shadow: none;
+                margin-left: 22px;
+                margin-bottom: 10px;
+                background: none;
+                border: none;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size:15px ;
+                font-weight: 700px;
+                cursor: pointer;
+            }
+            .solutions {
+                margin-left: 40px;
+                background: none;
+                border: none;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                
+                font-size:15px ;
+                font-weight: 700px;
+                cursor: pointer;
+            }
+            .enterprise {
+                margin-left: 40px;
+                background: none;
+                border: none;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size:15px ;
+                font-weight: 700px;
+                cursor: pointer;
+            }
+            .enterprise:hover {
+                text-decoration: underline;
+            }
+
+            .resources {
+                margin-left: 40px;
+                background: none;
+                border: none;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                
+                font-size:15px ;
+                font-weight: 700px;
+                cursor: pointer;
+                
+
+            }
+            .pricing {
+                margin-left: 40px;
+                background: none;
+                border: none;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                font-size:15px ;
+                cursor: pointer;
+                font-weight: 700px;
+            }
+            .pricing:hover {
+                text-decoration: underline;
+            }
+
+            .sign-in {
+                margin-left: 150px;
+                background: none;
+                border: none;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                font-size:15px ;
+                cursor: pointer;
+                font-weight: 700px;  
+            }
+            .sign-in:hover {
+                text-decoration: underline;
+            }
+
+            .talk-to-sales {
+                margin-left: 40px;
+                border-color: #611f69;
+                background-color: rgb(255, 255, 255);
+                color: #611f69;
+                height: 45px;
+                width: 142px;
+                font-size: 15px;
+                border-radius: 5px;
+                font-weight: 500;
+                border-width: 1px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+            }
+            .talk-to-sales:hover {
+                border-width: 2px;
+                cursor: pointer;
+                transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+            }
+            .get-started-1 {
+                margin-left: 20px;
+                border-color: #611f69;
+                background-color: #611f69;
+                color: #fdfdfd;
+                height: 45px;
+                width: 142px;
+                font-size: 15px;
+                border-radius: 5px;
+                font-weight: 500;
+                border-width: 1px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                cursor: pointer;  
+            }
+            .get-started-1:hover {
+                background-color: #56085f;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                
+            }
+            .free-to-try {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                
+                font-size: 18px;
+                text-align: center;
+                box-sizing: border-box;
+                height: 27px;
+                line-height: 28px;
+                margin-block-end: 0px;
+                margin-block-start: 16px;
+
+                
+            }
+            .middle-part-1  {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                
+                font-weight: 700;
+                margin-left: 330px;
+                margin-right: 330px;
+                max-width: 1230px;
+                text-align: center;
+               font-size: 56px;
+                
+                
+                text-size-adjust: 100%;
+                display: block;
+                margin-block-start: 25px;
+                margin-block-end: 16px;
+                
+                
+
+            }
+            .get-started-2 {
+                border-color: #611f69;
+                background-color: #611f69;
+                color: #fdfdfd;
+                text-align:center;
+                height: 50px;
+                width: 150px;
+                font-size: 15px;
+                border-radius: 5px;
+                font-weight: 500;
+                border-width: 1px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                cursor: pointer;
+                margin-left: 680px;
+                margin-right: 680px;
+                  
+            }
+            .get-started-2.get-started-2:hover {
+                background-color: #56085f;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            .image-container {
+                max-width: 1230px;
+                padding-left: 144px;
+                padding-right: 144px;
+                
+            }
+            
+            .airbnb {
+                padding-top: 50px;
+                margin-left: 100px;
+                padding-bottom: 50px;
+
+            }
+            .nasa {
+                padding-top: 50px;
+                margin-left: 100px;
+                padding-bottom: 50px;
+                
+
+            }
+            .uber {
+                padding-top: 50px;
+                margin-left:100px;
+                padding-bottom: 50px;
+            }
+            .target {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                margin-left:100px;
+                  
+            }
+            .ny-times {
+                padding-top: 50px;
+                margin-left:100px;
+                padding-bottom: 50px;
+            }
+            .etsy {
+                padding-top: 50px;
+                margin-left:100px;
+                padding-bottom: 50px;
+            }
+            .gif-container {
+                max-width: 1230px;
+                margin-left: 165px;
+                margin-right: 165px;
+                text-align: center;
+                min-width: 700px;  
+                margin-left: auto; 
+                margin-right: auto; 
+                text-align: center;
+            
+            }
+            .team-discussion {
+                height: 544px;
+                width:900px;
+                margin-top: 24px;
+                border-radius: 15px;
+            }
+
+
+
+
+
+            @media (max-width: 1200px) {
+            .thumbnail {
+                margin-left: 50px;
+            }
+            .talk-to-sales {
+                visibility: hidden;
+            
+            }
+            .team-discussion {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                height: auto;
+                width: 95%;
+            }
+            .image-container {
+                max-width: 90%;
+                padding: 0 50px;
+            }
+            .middle-part-1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                height: auto;
+                text-align: center;
+            }
+            .get-started-2 {
+                visibility: hidden;
+            }
+            }
+            
+            
+            
+            
+            
+            @media (max-width: 900px) {
+            .features, .solutions, .enterprise, .resources, .pricing, .sign-in {
+                display: none;
+                
+            }
+
+            .team-discussion {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                height: auto;
+                width: 85%;
+            
+
+            }
+            .image-container {
+                max-width: 80%;
+                padding: 0 30px;
+                height: auto;
+            }
+            .image-container img {
+                width: 80px;
+            }        
+            }
+            
+        
+                       
+                
+            
+            
+
+
+        </style>
+    </head>
+    <body>
+        <img class="thumbnail" src="https://a.slack-edge.com/3d92b39/marketing/img/nav/slack-salesforce-logo-nav-black.png">
+        <button class="features">Features</button>
+        <button class="solutions">Solutions</button>
+        <button class="enterprise">Enterprise</button>
+        <button class="resources">Resources</button>
+        <button class="pricing">Pricing</button>
+        <button class="sign-in">Sign in</button>
+        <button class="talk-to-sales">TALK TO SALES</button>
+        <button class="get-started-1">GET STARTED</button>
+      
+
+
+       <div class="middle-part">
+        <p class="middle-part-1">Where <font color="#9703C9"> work </font> happens</p>
+        <button class="get-started-2">GET STARTED</button>
+        <p class="free-to-try"><strong>Slack is free to try </strong> for as long as you like</p>
+       </div>
+
+
+
+       <div class="image-container">
+        <img class="airbnb" src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png">
+        <img class="nasa" src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png">
+        <img class="uber" src=" https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png">
+        <img class="target" src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png">
+        <img class="ny-times" src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png">
+        <img class="etsy" src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png">
+
+
+
+       </div>
+       <div class="gif-container">
+        <video class="team-discussion" controls>
+            <source src="https://a.slack-edge.com/e161d56/marketing/img/homepage/revamped-24/hero/hp-hero.en-GB@2x.mp4" type="video/mp4">
+        </video>
+       </div>
+
+    
+    
+    </body>
+</html>
